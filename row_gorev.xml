@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/layout/row_gorev.xml  — used by your ListView adapter -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:orientation="horizontal"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/tvRowGunler"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:paddingStart="10dp"
+        android:textSize="13sp"
+        android:background="@drawable/table_row_cell" />
+
+    <TextView
+        android:id="@+id/tvRowGorev"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:paddingStart="10dp"
+        android:textSize="13sp"
+        android:background="@drawable/table_row_cell" />
+
+    <TextView
+        android:id="@+id/tvRowBaslangis"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:paddingStart="10dp"
+        android:textSize="13sp"
+        android:background="@drawable/table_row_cell" />
+
+    <TextView
+        android:id="@+id/tvRowBitis"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:paddingStart="10dp"
+        android:textSize="13sp"
+        android:background="@drawable/table_row_cell" />
+
+</LinearLayout>

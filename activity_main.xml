@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#2E7D32"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp">
+
+
+        <ImageView
+            android:id="@+id/imgLogoLeft"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:src="@drawable/otomasyonLogo"
+            android:padding="6dp"
+            android:contentDescription="ABES Logo" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Görev &amp; Hatırlatıcı"
+            android:textColor="#FFFFFF"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:letterSpacing="0.02" />
+
+        <ImageView
+            android:id="@+id/imgLogoRight"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:src="@drawable/otomasyonLogo"
+            android:padding="6dp"
+            android:contentDescription="ABES Logo" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center_vertical">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardEskiProgramlar"
+            android:layout_width="0dp"
+            android:layout_height="220dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="10dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="#FFFFFF">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="#E8F5E9">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="12dp"
+                        android:gravity="center">
+
+                        <View android:layout_width="match_parent" android:layout_height="10dp" android:background="#4CAF50" android:layout_marginBottom="4dp" android:rotation="-5"/>
+                        <View android:layout_width="match_parent" android:layout_height="10dp" android:background="#FF9800" android:layout_marginBottom="4dp" android:rotation="2"/>
+                        <View android:layout_width="match_parent" android:layout_height="10dp" android:background="#2196F3" android:layout_marginBottom="4dp" android:rotation="-3"/>
+                        <View android:layout_width="match_parent" android:layout_height="10dp" android:background="#E91E63" android:layout_marginBottom="4dp" android:rotation="1"/>
+                        <View android:layout_width="match_parent" android:layout_height="10dp" android:background="#9C27B0" android:rotation="-2"/>
+
+                    </LinearLayout>
+                </FrameLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#212121"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Eski Programlar"
+                    android:textColor="#212121"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:padding="10dp"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardYeniProgram"
+            android:layout_width="0dp"
+            android:layout_height="220dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="10dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="#FFFFFF">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="#FFFFFF">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="+"
+                        android:textColor="@color/black"
+                        android:textSize="64sp"
+                        android:textStyle="bold" />
+
+                </FrameLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#212121"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Yeni Program Oluştur"
+                    android:textColor="#212121"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:padding="10dp"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardSurulenProgram"
+            android:layout_width="0dp"
+            android:layout_height="220dp"
+            android:layout_weight="1"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="#FFFFFF">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="#E3F2FD"
+                    android:padding="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:orientation="horizontal" android:layout_marginBottom="3dp">
+                            <View android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:background="#EF5350" android:layout_marginEnd="2dp"/>
+                            <View android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="2" android:background="#42A5F5" android:layout_marginEnd="2dp"/>
+                            <View android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:background="#FFCA28"/>
+                        </LinearLayout>
+
+                        <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:orientation="horizontal" android:layout_marginBottom="3dp">
+                            <View android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="2" android:background="#66BB6A" android:layout_marginEnd="2dp"/>
+                            <View android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:background="#AB47BC" android:layout_marginEnd="2dp"/>
+                            <View android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:background="#26C6DA"/>
+                        </LinearLayout>
+
+                        <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:orientation="horizontal" android:layout_marginBottom="3dp">
+                            <View android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:background="#FFA726" android:layout_marginEnd="2dp"/>
+                            <View android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="2" android:background="#EC407A" android:layout_marginEnd="2dp"/>
+                            <View android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:background="#5C6BC0"/>
+                        </LinearLayout>
+
+                        <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:orientation="horizontal">
+                            <View android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:background="#29B6F6" android:layout_marginEnd="2dp"/>
+                            <View android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:background="#D4E157" android:layout_marginEnd="2dp"/>
+                            <View android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="2" android:background="#FF7043"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </FrameLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#212121"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sürülen Program"
+                    android:textColor="#212121"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:padding="10dp"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#BDBDBD"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:background="#FAFAFA">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Daily"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#212121"
+            android:fontFamily="monospace"
+            android:layout_marginEnd="16dp"/>
+
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="3dp"
+            android:layout_height="22dp"
+            android:layout_weight="1"
+            android:progress="50"
+            android:max="100"
+
+            android:layout_marginEnd="16dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PROGRESS"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="#212121"
+            android:fontFamily="monospace"/>
+
+    </LinearLayout>
+
+</LinearLayout>

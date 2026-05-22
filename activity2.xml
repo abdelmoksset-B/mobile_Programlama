@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F5F5">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#2E7D32"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp">
+
+        <ImageView
+            android:id="@+id/imgLogoLeft"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:src="@drawable/ic_launcher_foreground"
+            android:background="@drawable/otomasyonLogo"
+            android:padding="6dp"
+            android:contentDescription="ABES Logo" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Görev &amp; Hatırlatma"
+            android:textColor="#FFFFFF"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:fontFamily="serif"
+            android:gravity="center" />
+
+        <ImageView
+            android:id="@+id/imgLogoRight"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:src="@drawable/ic_launcher_foreground"
+            android:background="@drawable/otomasyonLogo"
+            android:padding="6dp"
+            android:contentDescription="ABES Logo" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="160dp"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/cell_border">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="Görevi yaz"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:background="#8B8000" />
+
+                <EditText
+                    android:id="@+id/etGorev"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="#FFFFFF"
+                    android:padding="8dp"
+                    android:hint=""
+                    android:inputType="text"
+                    android:gravity="top|start" />
+
+            </LinearLayout>
+
+            <!-- ── Günü Seç cell ── -->
+            <LinearLayout
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/cell_border"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Günü Seç"
+                    android:textColor="#212121"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:padding="8dp" />
+
+            </LinearLayout>
+
+            <!-- ── Pts ── -->
+            <LinearLayout
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/cell_border"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="Pts"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:gravity="center"
+                    android:paddingTop="10dp" />
+
+                <CheckBox
+                    android:id="@+id/cbPts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:buttonTint="#2E7D32" />
+
+            </LinearLayout>
+
+            <!-- ── Sal ── -->
+            <LinearLayout
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/cell_border"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="Sal"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:gravity="center"
+                    android:paddingTop="10dp" />
+
+                <CheckBox
+                    android:id="@+id/cbSal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:buttonTint="#2E7D32" />
+
+            </LinearLayout>
+
+            <!-- ── Çar ── -->
+            <LinearLayout
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/cell_border"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="Çar"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:gravity="center"
+                    android:paddingTop="10dp" />
+
+                <CheckBox
+                    android:id="@+id/cbCar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:buttonTint="#2E7D32" />
+
+            </LinearLayout>
+
+            <!-- ── Per ── -->
+            <LinearLayout
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/cell_border"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="Per"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:gravity="center"
+                    android:paddingTop="10dp" />
+
+                <CheckBox
+                    android:id="@+id/cbPer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:buttonTint="#2E7D32" />
+
+            </LinearLayout>
+
+            <!-- ── Cum ── -->
+            <LinearLayout
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/cell_border"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="Cum"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:gravity="center"
+                    android:paddingTop="10dp" />
+
+                <CheckBox
+                    android:id="@+id/cbCum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:buttonTint="#2E7D32" />
+
+            </LinearLayout>
+
+            <!-- ── Cts ── -->
+            <LinearLayout
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/cell_border"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="Cts"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:gravity="center"
+                    android:paddingTop="10dp" />
+
+                <CheckBox
+                    android:id="@+id/cbCts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:buttonTint="#2E7D32" />
+
+            </LinearLayout>
+
+            <!-- ── Paz ── -->
+            <LinearLayout
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/cell_border"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="Paz"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:gravity="center"
+                    android:paddingTop="10dp" />
+
+                <CheckBox
+                    android:id="@+id/cbPaz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:buttonTint="#2E7D32" />
+
+            </LinearLayout>
+
+            <!-- ── Başlangış Saat cell ── -->
+            <LinearLayout
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/cell_border">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="Başlangış saat"
+                    android:textColor="#FFFFFF"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:background="#8B8000"
+                    android:padding="6dp" />
+
+                <EditText
+                    android:id="@+id/etBaslangis"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="#FFFFFF"
+                    android:padding="8dp"
+                    android:hint="00:00"
+                    android:inputType="time"
+                    android:gravity="top|start" />
+
+            </LinearLayout>
+
+            <!-- ── Bitiş Saat cell ── -->
+            <LinearLayout
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/cell_border">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="Bitiş Saat"
+                    android:textColor="#FFFFFF"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:background="#8B8000"
+                    android:padding="6dp" />
+
+                <EditText
+                    android:id="@+id/etBitis"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="#FFFFFF"
+                    android:padding="8dp"
+                    android:hint="00:00"
+                    android:inputType="time"
+                    android:gravity="top|start" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <!-- ===== SPACER ===== -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <!-- ===== DATA TABLE ===== -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:marginStart="8dp"
+        android:marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp">
+
+        <!-- Table Header Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:background="#D0D0D0">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Günler"
+                android:textStyle="bold"
+                android:textSize="13sp"
+                android:gravity="center_vertical"
+                android:paddingStart="10dp"
+                android:background="@drawable/table_header_cell" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Görev"
+                android:textStyle="bold"
+                android:textSize="13sp"
+                android:gravity="center_vertical"
+                android:paddingStart="10dp"
+                android:background="@drawable/table_header_cell" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="başlangış saat"
+                android:textStyle="bold"
+                android:textSize="13sp"
+                android:gravity="center_vertical"
+                android:paddingStart="10dp"
+                android:background="@drawable/table_header_cell" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="bitiş saat"
+                android:textStyle="bold"
+                android:textSize="13sp"
+                android:gravity="center_vertical"
+                android:paddingStart="10dp"
+                android:background="@drawable/table_header_cell" />
+
+        </LinearLayout>
+
+        <!-- Table Body (ListView) -->
+        <ListView
+            android:id="@+id/listViewGorevler"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:divider="#CCCCCC"
+            android:dividerHeight="1dp"
+            android:background="#FFFFFF" />
+
+    </LinearLayout>
+
+</LinearLayout>
